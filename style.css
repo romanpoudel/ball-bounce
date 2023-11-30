@@ -1,0 +1,31 @@
+/* .viewport {
+	width: 500px;
+	height: 500px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.circle {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: blue;
+	/* transform: translate(-50px); */
+/* } */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+canvas {
+	border: 1px solid black;
+}
+
+.viewport{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100vw;
+	height:100vh;
+}
