@@ -1,1 +1,6 @@
-const TOTAL_BALLS=10;
+const TOTAL_BALLS=30;
+const BALL_SPEED=4;
+const CANVAS_WIDTH=500;
+const CANVAS_HEIGHT=500;
+const MIN_RADIUS=5;
+const MAX_RADIUS=10;
