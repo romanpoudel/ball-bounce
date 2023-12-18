@@ -1,19 +1,32 @@
-/**
- * 
- * @param {number} min 
- * @param {number} max 
- * @returns number
- */
-function generateRandomNumberBetween(min=0,max=0){
-    return Math.floor(min + Math.random() * (max - min + 1));
+// /**
+//  *
+//  * @param {number} min
+//  * @param {number} max
+//  * @returns number
+//  */
+// function generateRandomNumberBetween(min=0,max=0){
+//     return Math.floor(min + Math.random() * (max - min + 1));
+// }
+
+// /**
+//  *
+//  * @returns string
+//  */
+// function generateRandomColor(){
+//     return `rgb(${generateRandomNumberBetween(0,255)},${generateRandomNumberBetween(0,255)},${generateRandomNumberBetween(0,255)})`;
+// }
+
+// console.log(generateRandomNumberBetween(0,255))
+
+function generateRandomNumberBetween(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-/**
- * 
- * @returns string
- */
-function generateRandomColor(){
-    return `rgb(${generateRandomNumberBetween(0,255)},${generateRandomNumberBetween(0,255)},${generateRandomNumberBetween(0,255)})`;
+function generateRandomColor() {
+	const letters = "0123456789ABCDEF";
+	let color = "#";
+	for (let i = 0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)];
+	}
+	return color;
 }
-
-console.log(generateRandomNumberBetween(0,255))
