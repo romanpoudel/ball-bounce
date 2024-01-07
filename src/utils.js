@@ -12,12 +12,6 @@
 //  *
 //  * @returns string
 //  */
-// function generateRandomColor(){
-//     return `rgb(${generateRandomNumberBetween(0,255)},${generateRandomNumberBetween(0,255)},${generateRandomNumberBetween(0,255)})`;
-// }
-
-// console.log(generateRandomNumberBetween(0,255))
-
 function generateRandomNumberBetween(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
 }
